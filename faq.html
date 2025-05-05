@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Eword Publishers</title>
+    <link rel="stylesheet" href="css/style.css">
+     <!-- Optional: Add Font Awesome for icons -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"> -->
+    <style>
+        /* Specific styling for FAQ page - Adjust as needed */
+        .banner {
+            background: url('images/faq-bg.jpg') no-repeat center center/cover; /* Add a relevant banner image */
+            color: #fff;
+            text-align: center;
+            padding: 4em 2em;
+            position: relative;
+        }
+         .banner::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5); /* Overlay for text readability */
+        }
+         .banner h1 {
+            color: #fff;
+            font-size: 2.5em;
+             position: relative;
+             z-index: 1;
+        }
+        .faq-section h2 {
+            margin-bottom: 1.5em;
+        }
+
+        .faq-item {
+            border-bottom: 1px solid #ddd;
+            margin-bottom: 1em;
+        }
+
+        .faq-question {
+            background-color: #eee;
+            padding: 1em;
+            cursor: pointer;
+            font-weight: bold;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: background-color 0.3s ease;
+        }
+         .faq-question:hover {
+             background-color: #ddd;
+         }
+
+
+        /* Using max-height for smoother accordion transition */
+         .faq-question::after {
+            content: '+'; /* Plus sign icon */
+            font-size: 1.2em;
+            transition: transform 0.3s ease;
+        }
+
+        .faq-question.active::after {
+            content: '-'; /* Minus sign icon when active */
+             transform: rotate(180deg); /* Optional: Rotate the + into a - */
+        }
+
+        .faq-answer {
+            padding: 0 1em; /* Add padding inside answer */
+            background-color: #f9f9f9;
+            max-height: 0; /* Initially hidden */
+            overflow: hidden;
+            transition: max-height 0.3s ease-out, padding 0.3s ease-out; /* Transition height and padding */
+        }
+        /* Use this class with JS to show the answer */
+        .faq-answer.active {
+            max-height: 500px; /* A value larger than the max possible height */
+            padding: 1em; /* Apply bottom padding when active */
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Common Header code goes here -->
+     <header>
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" alt="Eword Publishers Logo">
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="approach.html">Our Approach</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="how-it-works.html">How it Works</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <a href="pricing.html" class="cta-button">Get a Quote</a>
+             <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+
+    <main>
+        <section class="section faq-section">
+            <div class="container">
+                <h2>Frequently Asked Questions</h2>
+
+                <div class="faq-list">
+                    <!-- FAQ Item 1 -->
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            What is Eword Publishers?
+                        </div>
+                        <div class="faq-answer">
+                            <p>Eword Publishers is a publishing firm based in Nairobi, Kenya, offering hybrid publishing services, preliminary services, and printing to authors worldwide. Our mission is to make professional publishing accessible.</p>
+                        </div>
+                    </div>
+
+                     <!-- FAQ Item 2 -->
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            What type of publishing do you offer?
+                        </div>
+                        <div class="faq-answer">
+                            <p>We offer Hybrid Publishing. This combines elements of traditional and self-publishing, where authors pay for professional services but retain control over the publishing process.</p>
+                        </div>
+                    </div>
+
+                     <!-- FAQ Item 3 -->
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            Can you publish a book for a client and recover the cost from selling the book?
+                        </div>
+                        <div class="faq-answer">
+                            <p>No, under our Hybrid Publishing model, the author is responsible for the production costs. We facilitate the production process for a fee.</p>
+                        </div>
+                    </div>
+
+                    <!-- Add more FAQ items based on the provided documents -->
+                    <!-- Use the structure:
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            [Your Question Here]
+                        </div>
+                        <div class="faq-answer">
+                            <p>[Your Answer Here]</p>
+                        </div>
+                    </div>
+                    -->
+                     <div class="faq-item">
+                        <div class="faq-question">
+                            Do you offer marketing services?
+                        </div>
+                        <div class="faq-answer">
+                            <p>We do not offer direct marketing services. However, we provide guidance and consultancy on effective ways to get your books to market, including advice on social media promotion and book launching.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                           Can Eword Publishers help me write my book?
+                        </div>
+                        <div class="faq-answer">
+                            <p>Yes, in addition to other preliminary services, we offer transcription (converting audio/video to text) and content development services to help shape your manuscript, even from just an idea or narration.</p>
+                        </div>
+                    </div>
+                     <div class="faq-item">
+                        <div class="faq-question">
+                           What are preliminary services? Are they necessary?
+                        </div>
+                        <div class="faq-answer">
+                            <p>Preliminary services are steps like proofreading, editing, book layout, cover design, and ISBN installation that prepare your manuscript for printing and give it a professional look. While highly recommended to improve quality, they are optional if you provide a print-ready manuscript.</p>
+                        </div>
+                    </div>
+                     <div class="faq-item">
+                        <div class="faq-question">
+                           How much does it cost to publish my book?
+                        </div>
+                        <div class="faq-answer">
+                            <p>The cost depends on the services required. Preliminary and online publishing services have fixed fees (see our Pricing page). Printing costs vary based on page count, quantity, size, color, and manuscript condition. Please contact us with your project details for an accurate quote.</p>
+                        </div>
+                    </div>
+                     <div class="faq-item">
+                        <div class="faq-question">
+                           What is your minimum order quantity (MOQ) for printing?
+                        </div>
+                        <div class="faq-answer">
+                            <p>Our minimum order quantity for offset printing is 250 copies. Printing smaller quantities is less economical per unit.</p>
+                        </div>
+                    </div>
+                     <div class="faq-item">
+                        <div class="faq-question">
+                           What are your typical timelines?
+                        </div>
+                        <div class="faq-answer">
+                            <p>If your manuscript is ready for printing, the process (printing and delivery) takes 14 days. If preliminary services are needed, add an additional 14 days for a standard book (up to 180 pages). Larger books may take longer.</p>
+                        </div>
+                    </div>
+                     <div class="faq-item">
+                        <div class="faq-question">
+                           How much is an ISBN?
+                        </div>
+                        <div class="faq-answer">
+                            <p>We provide an ISBN for Ksh 1,500 for clients using our publishing services. Authors can also obtain an ISBN directly from the Kenya National Library Services (KNLS) if preferred.</p>
+                        </div>
+                    </div>
+
+
+                     <!-- Keep adding based on your documents -->
+
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Common Footer code goes here -->
+     <footer>
+        <div class="container footer-container">
+            <div class="footer-col">
+                <a href="index.html" class="logo">
+                    <img src="images/logo.png" alt="Eword Publishers Logo" style="height: 60px; filter: invert(1);">
+                </a>
+                <p style="margin-top: 1em;">Democratizing access to top-tier printing and publishing services.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="how-it-works.html">How it Works</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact Info</h4>
+                <p>
+                    <i class="fa fa-phone"></i>
+                    +254 745 420 420<br>
+                    +254 725 006 002
+                </p>
+                <p>
+                    <i class="fa fa-envelope"></i>
+                    ewordpublishers@gmail.com
+                </p>
+                <p>
+                    <i class="fa fa-map-marker"></i>
+                    Pension Towers, Loita Street,<br>10th Floor, Nairobi, Kenya
+                </p>
+            </div>
+            <div class="footer-col social-icons">
+                 <h4>Follow Us</h4>
+                 <a href="https://web.facebook.com/ewordpublishers/" target="_blank"><i class="fa fa-facebook"></i></a>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            © <span id="current-year"></span> Eword Publishers. All Rights Reserved.
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+    <script src="js/script.js"></script>
+    <script>
+        // Updated JS for FAQ Accordion using max-height
+         document.addEventListener('DOMContentLoaded', function() {
+             const faqQuestions = document.querySelectorAll('.faq-question');
+
+             faqQuestions.forEach(question => {
+                 question.addEventListener('click', function() {
+                     const answer = this.nextElementSibling;
+
+                     // Optional: Close other open answers
+                     faqQuestions.forEach(q => {
+                         if (q !== this && q.classList.contains('active')) {
+                             q.classList.remove('active');
+                             q.nextElementSibling.classList.remove('active');
+                             q.nextElementSibling.style.maxHeight = null; // Collapse
+                         }
+                     });
+
+                     // Toggle the active class on the question
+                     this.classList.toggle('active');
+
+                     // Toggle the active class and manage height for the answer
+                     if (answer.classList.contains('active')) {
+                         answer.classList.remove('active');
+                         answer.style.maxHeight = null; // Collapse
+                     } else {
+                         answer.classList.add('active');
+                         // Set max-height to scrollHeight to allow expansion
+                         answer.style.maxHeight = answer.scrollHeight + "px";
+
+                          // Add a slight delay to ensure content is measured correctly before transition
+                         setTimeout(() => {
+                              answer.style.maxHeight = answer.scrollHeight + "px"; // Recalculate if needed
+                         }, 50); // Adjust delay if necessary
+                     }
+                 });
+             });
+         });
+     </script>
+</body>
+</html>

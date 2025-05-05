@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing & Quotes - Eword Publishers</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Optional: Add Font Awesome for icons -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"> -->
+     <style>
+        /* Add specific CSS for this page if needed */
+         .banner {
+            background: url('images/pricing-bg.jpg') no-repeat center center/cover; /* Add a relevant banner image */
+            color: #fff;
+            text-align: center;
+            padding: 4em 2em;
+            position: relative;
+        }
+         .banner::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5); /* Overlay for text readability */
+        }
+         .banner h1 {
+            color: #fff;
+            font-size: 2.5em;
+             position: relative;
+             z-index: 1;
+        }
+
+         .pricing-section {
+             padding: 3em 0;
+         }
+         .pricing-section h2 {
+             text-align: center;
+             margin-bottom: 2em;
+             color: var(--primary-color);
+         }
+         .pricing-table {
+             width: 100%;
+             border-collapse: collapse;
+             margin-bottom: 3em;
+             box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+             background-color: #fff;
+             border-radius: 8px;
+             overflow: hidden; /* Needed for border-radius with collapse */
+         }
+         .pricing-table th, .pricing-table td {
+             padding: 1em;
+             text-align: left;
+             border-bottom: 1px solid #eee;
+         }
+         .pricing-table th {
+             background-color: var(--primary-color);
+             color: #fff;
+             font-weight: bold;
+         }
+          .pricing-table tr:last-child td {
+              border-bottom: none;
+          }
+          .pricing-table tr:nth-child(even) {
+              background-color: var(--background-light);
+          }
+
+          .quote-info {
+               padding: 3em 0;
+               text-align: center;
+          }
+          .quote-info h2 {
+              margin-bottom: 1em;
+          }
+          .quote-info p {
+               max-width: 800px;
+               margin: 0 auto 1.5em;
+          }
+         .quote-factors {
+             list-style: none;
+             padding: 0;
+             max-width: 600px;
+             margin: 0 auto;
+             text-align: left;
+         }
+         .quote-factors li {
+             background-color: #fff;
+             padding: 1em;
+             margin-bottom: 1em;
+             border-left: 4px solid var(--primary-color);
+             box-shadow: 0 1px 5px rgba(0,0,0,0.05);
+         }
+         .payment-terms {
+              padding: 3em 0;
+              background-color: var(--background-light);
+              text-align: center;
+         }
+         .payment-terms h2 {
+             margin-bottom: 1em;
+         }
+         .payment-terms p {
+             max-width: 700px;
+             margin: 0 auto 1.5em;
+         }
+          .payment-methods {
+              list-style: none;
+              padding: 0;
+              max-width: 500px;
+              margin: 0 auto;
+              text-align: left;
+          }
+          .payment-methods li {
+               background-color: #fff;
+               padding: 1em;
+               margin-bottom: 1em;
+               border-left: 4px solid var(--secondary-color);
+              box-shadow: 0 1px 5px rgba(0,0,0,0.05);
+          }
+           .payment-methods li strong {
+               color: var(--primary-color);
+           }
+           .payment-methods li span {
+               display: block;
+               font-size: 0.9em;
+               color: #555;
+               margin-top: 0.3em;
+           }
+
+
+     </style>
+</head>
+<body>
+
+    <!-- Common Header code goes here -->
+     <header>
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" alt="Eword Publishers Logo">
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="approach.html">Our Approach</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="how-it-works.html">How it Works</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <a href="pricing.html" class="cta-button">Get a Quote</a>
+             <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+
+    <main>
+         <section class="banner">
+            <div class="container">
+                <h1>Pricing & Getting a Quote</h1>
+            </div>
+        </section>
+
+        <section class="section pricing-section">
+            <div class="container">
+                <h2>Fixed Service Pricing</h2>
+                 <p style="text-align: center; max-width: 700px; margin: 0 auto 2em;">These are the fixed fees for our Preliminary and Online Publishing Services. Printing costs are quote-based (see below).</p>
+                <table class="pricing-table">
+                    <thead>
+                        <tr>
+                            <th>Service</th>
+                            <th>Price (KSh)</th>
+                            <th>Notes</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Transcription</td>
+                            <td>30</td>
+                            <td>Per minute of audio/video</td>
+                        </tr>
+                        <tr>
+                            <td>Content Development</td>
+                            <td>18,500</td>
+                            <td>Per title, for books up to 180 pages</td>
+                        </tr>
+                         <tr>
+                            <td>Proofreading & Editing</td>
+                            <td>14,500</td>
+                            <td>Per title, for books up to 180 pages (181-300 pages: Ksh 16,500)</td>
+                        </tr>
+                         <tr>
+                            <td>Book Layout (Formatting)</td>
+                            <td>8,500</td>
+                            <td>Per title, for books up to 180 pages</td>
+                        </tr>
+                         <tr>
+                            <td>Book Cover Design</td>
+                            <td>4,500</td>
+                            <td>Per title, includes 3 concepts & 2 rounds of edits</td>
+                        </tr>
+                         <tr>
+                            <td>ISBN Installation</td>
+                            <td>1,500</td>
+                            <td>Per title</td>
+                        </tr>
+                         <tr>
+                            <td>Amazon KDP Publishing</td>
+                            <td>5,500</td>
+                            <td>Per title, includes eBook & Paperback setup</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+        </section>
+
+         <section class="section quote-info" style="background-color: var(--background-light);">
+            <div class="container">
+                <h2>Getting a Printing Quote</h2>
+                <p>Printing costs are variable and depend on several factors specific to your book. To provide you with an accurate quote for Press Services (Physical Printing), we need the following information:</p>
+                <ul class="quote-factors">
+                    <li><strong>Book Title & Author's Name:</strong> For identification.</li>
+                    <li><strong>Book Size:</strong> Specify the desired size (e.g., A4, A5, 6x9 inches, B5, etc.).</li>
+                    <li><strong>Interior Color:</strong> Indicate if the interior should be full color or black and white.</li>
+                    <li><strong>Quantity:</strong> The number of copies you need. (Note: Our Minimum Order Quantity (MOQ) for offset printing is 250 copies.)</li>
+                    <li><strong>Manuscript Status:</strong> Is the manuscript ready for printing (fully formatted, edited, designed), or does it require preliminary services first?</li>
+                </ul>
+                 <p style="margin-top: 2em;">Once we have this information, we can provide a tailored printing quote.</p>
+                 <a href="contact.html" class="cta-button">Request a Printing Quote</a>
+            </div>
+        </section>
+
+         <section class="section payment-terms">
+             <div class="container">
+                 <h2>Payment Terms</h2>
+                 <p>We aim to make our fees clear and payment processes straightforward.</p>
+                 <ul class="payment-methods">
+                     <li><strong>Preliminary Services & Online Publishing:</strong> 100% Upfront Payment Required before work begins.</li>
+                     <li><strong>Press Services (Physical Printing):</strong> Payment Required Upfront. Installment options are available, but printing commences only upon receipt of the full payment.</li>
+                 </ul>
+                  <p style="margin-top: 2em;">You can make payments via:</p>
+                  <ul class="payment-methods">
+                     <li><strong>Mpesa Till No:</strong> 960 805</li>
+                      <li><strong>Equity Bank A/C:</strong> 1520 2833 93078</li>
+                  </ul>
+             </div>
+         </section>
+
+         <!-- Optional: Add sample quotes section here if you want to display them as images -->
+          <!-- <section class="section sample-quotes">
+              <div class="container">
+                   <h2>Sample Quotes</h2>
+                   <p style="text-align: center; max-width: 700px; margin: 0 auto 2em;">Here are a couple of sample quotes to give you an idea of potential costs. Actual quotes vary based on project specifics.</p>
+                   <div class="quote-samples" style="display: flex; flex-wrap: wrap; gap: 2em; justify-content: center;">
+                       <img src="images/sample-quote-1.jpg" alt="Sample Quote 1" style="max-width: 45%; height: auto; border: 1px solid #ddd; border-radius: 8px;">
+                        <img src="images/sample-quote-2.jpg" alt="Sample Quote 2" style="max-width: 45%; height: auto; border: 1px solid #ddd; border-radius: 8px;">
+                       // Add more sample images if available
+                   </div>
+              </div>
+          </section> -->
+
+
+    </main>
+
+    <!-- Common Footer code goes here -->
+     <footer>
+        <div class="container footer-container">
+            <div class="footer-col">
+                <a href="index.html" class="logo">
+                    <img src="images/logo.png" alt="Eword Publishers Logo" style="height: 60px; filter: invert(1);">
+                </a>
+                <p style="margin-top: 1em;">Democratizing access to top-tier printing and publishing services.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="how-it-works.html">How it Works</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact Info</h4>
+                <p>
+                    <i class="fa fa-phone"></i>
+                    +254 745 420 420<br>
+                    +254 725 006 002
+                </p>
+                <p>
+                    <i class="fa fa-envelope"></i>
+                    ewordpublishers@gmail.com
+                </p>
+                <p>
+                    <i class="fa fa-map-marker"></i>
+                    Pension Towers, Loita Street,<br>10th Floor, Nairobi, Kenya
+                </p>
+            </div>
+            <div class="footer-col social-icons">
+                 <h4>Follow Us</h4>
+                 <a href="https://web.facebook.com/ewordpublishers/" target="_blank"><i class="fa fa-facebook"></i></a>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            © <span id="current-year"></span> Eword Publishers. All Rights Reserved.
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+    <script src="js/script.js"></script>
+</body>
+</html>

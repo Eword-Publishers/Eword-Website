@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Eword Publishers</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Optional: Add Font Awesome for icons -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"> -->
+     <style>
+        /* Add specific CSS for this page if needed */
+        .banner {
+            background: url('images/about-bg.jpg') no-repeat center center/cover; /* Add your about page banner image */
+            color: #fff;
+            text-align: center;
+            padding: 4em 2em;
+            position: relative;
+        }
+         .banner::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5); /* Overlay for text readability */
+        }
+         .banner h1 {
+            color: #fff;
+            font-size: 2.5em;
+             position: relative;
+             z-index: 1;
+        }
+
+        .about-content {
+             display: flex;
+             flex-wrap: wrap;
+             gap: 3em;
+             align-items: center;
+             padding: 3em 0;
+        }
+        .about-text, .about-image {
+            flex: 1 1 45%; /* Adjust as needed */
+             min-width: 300px;
+        }
+         .about-image img {
+             max-width: 100%;
+             height: auto;
+             border-radius: 8px;
+             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+         }
+         .ceo-section {
+              text-align: center;
+              padding: 3em 0;
+         }
+         .ceo-section img {
+              width: 150px; /* Adjust size */
+              border-radius: 50%;
+              margin-bottom: 1em;
+         }
+         .location-section {
+             padding: 3em 0;
+         }
+          .location-section p {
+             margin-bottom: 1em;
+          }
+     </style>
+</head>
+<body>
+
+    <!-- Common Header code goes here -->
+     <header>
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" alt="Eword Publishers Logo">
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="approach.html">Our Approach</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="how-it-works.html">How it Works</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <a href="pricing.html" class="cta-button">Get a Quote</a>
+             <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+
+    <main>
+         <section class="banner">
+            <div class="container">
+                <h1>About Us</h1>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container about-content">
+                <div class="about-text">
+                     <h2>Our Story</h2>
+                    <p>Established in 2015 in Nairobi, Kenya, Eword Publishers is a publishing firm offering an extensive array of printing and publishing services to clients in Kenya and around the world. Our mission is to democratize access to top-tier printing and publishing services, catering to the needs of individuals and organizations alike.</p>
+                     <p>Since our inception, we have successfully published hundreds of thousands of books and numerous other types of publications. By leveraging our extensive industry knowledge, we have formed strategic alliances with other players in the field. These collaborations have uniquely positioned us to cater to the diverse printing and publishing needs of a wide range of businesses.</p>
+                     <p>Over the past seven years, Eword Publishers has also amassed significant experience in institutional and corporate projects, offering a wide variety of digital and offset printing services.</p>
+                </div>
+                <div class="about-image">
+                    <img src="images/printing-press.jpg" alt="Printing Press"> <!-- Use an image like the printing press from your document -->
+                </div>
+            </div>
+        </section>
+
+        <section class="section ceo-section" style="background-color: var(--background-light);">
+             <div class="container">
+                <h2>Meet the CEO</h2>
+                 <img src="images/dennis-karanja.jpg" alt="Dennis Karanja"> <!-- Add an image of your CEO if you have one -->
+                 <h3>Dennis Karanja</h3>
+                 <p>Eword CEO</p>
+                 <p style="max-width: 600px; margin: 1em auto;">As CEO, Dennis is committed to assisting clients in reaching their publishing objectives. He believes the success of Eword Publishers is defined by the success of its clients and is dedicated to providing exceptional publishing services.</p>
+             </div>
+         </section>
+
+        <section class="section location-section">
+            <div class="container">
+                <h2>Our Location</h2>
+                 <p>We are based at:</p>
+                 <p>
+                    Pension Towers, Loita Street,<br>
+                    CBD, Nairobi, Kenya
+                 </p>
+                 <p>This strategic location allows us to effectively serve our client base that extends across Kenya, Africa, and the world.</p>
+                <!-- Optional: Embed Google Map here if desired -->
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Common Footer code goes here -->
+     <footer>
+        <div class="container footer-container">
+            <div class="footer-col">
+                <a href="index.html" class="logo">
+                    <img src="images/logo.png" alt="Eword Publishers Logo" style="height: 60px; filter: invert(1);">
+                </a>
+                <p style="margin-top: 1em;">Democratizing access to top-tier printing and publishing services.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="how-it-works.html">How it Works</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact Info</h4>
+                <p>
+                    <i class="fa fa-phone"></i>
+                    +254 745 420 420<br>
+                    +254 725 006 002
+                </p>
+                <p>
+                    <i class="fa fa-envelope"></i>
+                    ewordpublishers@gmail.com
+                </p>
+                <p>
+                    <i class="fa fa-map-marker"></i>
+                    Pension Towers, Loita Street,<br>10th Floor, Nairobi, Kenya
+                </p>
+            </div>
+            <div class="footer-col social-icons">
+                 <h4>Follow Us</h4>
+                 <a href="https://web.facebook.com/ewordpublishers/" target="_blank"><i class="fa fa-facebook"></i></a>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            © <span id="current-year"></span> Eword Publishers. All Rights Reserved.
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+    <script src="js/script.js"></script>
+</body>
+</html>

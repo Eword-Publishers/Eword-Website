@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services - Eword Publishers</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Optional: Add Font Awesome for icons -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"> -->
+     <style>
+        /* Add specific CSS for this page if needed */
+         .banner {
+            background: url('images/services-bg.jpg') no-repeat center center/cover; /* Add a relevant banner image */
+            color: #fff;
+            text-align: center;
+            padding: 4em 2em;
+            position: relative;
+        }
+         .banner::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5); /* Overlay for text readability */
+        }
+         .banner h1 {
+            color: #fff;
+            font-size: 2.5em;
+             position: relative;
+             z-index: 1;
+        }
+
+        .service-category {
+             padding: 3em 0;
+        }
+        .service-category h2 {
+             text-align: center;
+             margin-bottom: 2em;
+             color: var(--primary-color);
+        }
+        .service-item-details {
+             display: flex;
+             flex-wrap: wrap;
+             align-items: center;
+             gap: 2em;
+             margin-bottom: 3em;
+             background-color: #fff;
+             padding: 2em;
+             border-radius: 8px;
+             box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .service-item-details:nth-child(odd) { /* Alternate background/layout */
+             background-color: var(--background-light);
+             flex-direction: row-reverse; /* Reverse order on odd items */
+        }
+         .service-text, .service-image {
+             flex: 1 1 45%;
+             min-width: 280px;
+         }
+          .service-image img {
+              max-width: 100%;
+              height: auto;
+              border-radius: 8px;
+          }
+          .service-text h3 {
+              margin-bottom: 0.5em;
+          }
+          .service-text .price {
+              font-weight: bold;
+              color: var(--primary-color);
+              margin-top: 1em;
+              display: block; /* Make price on its own line */
+          }
+          .service-item-details ul {
+              margin-left: 1.5em;
+              list-style: disc;
+          }
+
+
+     </style>
+</head>
+<body>
+
+    <!-- Common Header code goes here -->
+     <header>
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" alt="Eword Publishers Logo">
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="approach.html">Our Approach</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="how-it-works.html">How it Works</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <a href="pricing.html" class="cta-button">Get a Quote</a>
+             <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+
+    <main>
+         <section class="banner">
+            <div class="container">
+                <h1>Our Publishing Services</h1>
+            </div>
+        </section>
+
+        <section class="section service-category">
+            <div class="container">
+                <h2>Preliminary Services</h2>
+                 <p style="text-align: center; max-width: 800px; margin: 0 auto 3em;">These services prepare your manuscript to give it a professional feel and look, giving it the best possible chance of getting seen and picked up by a potential reader. While highly recommended, they are optional.</p>
+
+                <div class="service-item-details">
+                    <div class="service-text">
+                        <h3>Transcription</h3>
+                        <p>Convert spoken words, video, or audio recordings into written text. Essential when your manuscript is developed from non-written content.</p>
+                        <span class="price">Pricing: Ksh 30 per Minute of Audio/Video</span>
+                    </div>
+                    <div class="service-image">
+                         <img src="images/transcription.jpg" alt="Transcription"> <!-- Add relevant image -->
+                    </div>
+                </div>
+
+                <div class="service-item-details">
+                    <div class="service-text">
+                        <h3>Content Development</h3>
+                        <p>Transforming a raw manuscript into a polished and well-structured book. This process includes reorganizing content, adding explanations, expanding points, and ensuring flow and readability.</p>
+                         <p>Applicable for books up to 180 pages.</p>
+                        <span class="price">Pricing: Ksh 18,500 Per Title</span>
+                    </div>
+                    <div class="service-image">
+                         <img src="images/content-development.jpg" alt="Content Development"> <!-- Add relevant image -->
+                    </div>
+                </div>
+
+                 <div class="service-item-details">
+                    <div class="service-text">
+                        <h3>Proofreading & Editing</h3>
+                        <p>A comprehensive process for improving the overall quality of your text. We focus on:</p>
+                         <ul>
+                            <li>Grammar, Spelling, Punctuation</li>
+                            <li>Syntax and Sentence Structure</li>
+                            <li>Vocabulary and Word Choice</li>
+                            <li>Style and Tone</li>
+                            <li>Continuity and Coherence</li>
+                             <li>Clarity and Readability</li>
+                         </ul>
+                         <p>Applicable for books up to 180 pages.</p>
+                        <span class="price">Pricing: Ksh 14,500 Per Title</span>
+                         <p style="font-size: 0.9em; margin-top: 0.5em;">(Books 181-300 pages: Ksh 16,500 - refer to FAQ/Pricing for details)</p>
+                    </div>
+                    <div class="service-image">
+                         <img src="images/editing.jpg" alt="Proofreading and Editing"> <!-- Add relevant image -->
+                    </div>
+                </div>
+
+                <div class="service-item-details">
+                    <div class="service-text">
+                        <h3>Book Layout (Formatting)</h3>
+                        <p>Arranging text, images, and design elements on the pages of a book, ready for printing. This involves determining size, margins, fonts, and overall visual structure.</p>
+                         <p>Applicable for books up to 180 pages.</p>
+                        <span class="price">Pricing: Ksh 8,500 Per Title</span>
+                         <p style="font-size: 0.9em; margin-top: 0.5em;">(Pricing for larger books depends on size and complexity)</p>
+                    </div>
+                    <div class="service-image">
+                         <img src="images/book-layout.jpg" alt="Book Layout"> <!-- Add relevant image -->
+                    </div>
+                </div>
+
+                 <div class="service-item-details">
+                    <div class="service-text">
+                        <h3>Book Cover Design</h3>
+                        <p>Creating a compelling and eye-catching visual concept for your book's cover, spine, and back. Includes the creation of three initial concepts and up to two rounds of edits.</p>
+                        <span class="price">Pricing: Ksh 4,500 Per Title</span>
+                    </div>
+                    <div class="service-image">
+                         <img src="images/cover-design.jpg" alt="Book Cover Design"> <!-- Add relevant image -->
+                    </div>
+                </div>
+
+                <div class="service-item-details">
+                    <div class="service-text">
+                        <h3>ISBN Installation</h3>
+                        <p>Obtaining and assigning an International Standard Book Number (ISBN) to your book. An ISBN is essential for distribution through booksellers and libraries.</p>
+                         <p style="font-size: 0.9em;">(Authors can also obtain ISBNs directly from KNLS if preferred.)</p>
+                        <span class="price">Pricing: Ksh 1,500 Per Title</span>
+                    </div>
+                    <div class="service-image">
+                         <img src="images/isbn.jpg" alt="ISBN Barcode"> <!-- Add relevant image -->
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+         <section class="section service-category" style="background-color: var(--background-light);">
+            <div class="container">
+                <h2>Online Publishing (Amazon KDP)</h2>
+                 <p style="text-align: center; max-width: 800px; margin: 0 auto 3em;">Reach a global audience by making your book available for sale on Amazon. We assist in converting your manuscript and publishing it on Amazon KDP (Kindle Direct Publishing).</p>
+
+                 <div class="service-item-details">
+                     <div class="service-text">
+                         <h3>Amazon KDP Publishing</h3>
+                         <p>Conversion of your manuscript to formats required for Amazon KDP, including EPUB for eBooks and appropriate formats for paperback printing.</p>
+                         <p>Assistance with setting up or accessing your Amazon KDP account.</p>
+                          <p>Includes publishing for both eBook and paperback versions.</p>
+                         <span class="price">Pricing: Ksh 5,500 Per Title</span>
+                     </div>
+                      <div class="service-image">
+                         <img src="images/amazon-kdp.jpg" alt="Amazon KDP Platform"> <!-- Add relevant image -->
+                    </div>
+                 </div>
+
+                  <p style="text-align: center; margin-top: 2em;">Learn more about the online publishing process and formats on our <a href="how-it-works.html">How It Works</a> page.</p>
+
+            </div>
+        </section>
+
+
+         <section class="section service-category">
+            <div class="container">
+                <h2>Press Services (Physical Printing)</h2>
+                <p style="text-align: center; max-width: 800px; margin: 0 auto 3em;">Once your book design is finalized, we provide high-quality offset printing services for physical copies. We handle the entire process from printing to binding and trimming.</p>
+
+                 <div class="service-item-details">
+                     <div class="service-text">
+                         <h3>Offset Printing</h3>
+                         <p>The process of creating physical copies of your book. Our service includes:</p>
+                         <ul>
+                            <li>Printing</li>
+                             <li>Folding</li>
+                             <li>Collection</li>
+                             <li>Binding</li>
+                             <li>Lamination</li>
+                             <li>Trimming & Packaging</li>
+                         </ul>
+                          <p style="font-weight: bold; margin-top: 1em;">Pricing for printing is quote-based.</p>
+                           <p>Costs vary depending on:</p>
+                           <ul>
+                               <li>Page Count</li>
+                               <li>Quantity (Minimum Order Quantity is 250 copies)</li>
+                               <li>Book Size</li>
+                               <li>Interior Color (Black & White or Full Color)</li>
+                           </ul>
+                           <p style="font-size: 0.9em; margin-top: 0.5em;">Please see our <a href="pricing.html">Pricing</a> page for details on how quotes are determined.</p>
+                     </div>
+                      <div class="service-image">
+                         <img src="images/offset-printing.jpg" alt="Offset Printing Machine"> <!-- Add relevant image -->
+                    </div>
+                 </div>
+
+            </div>
+        </section>
+
+
+         <!-- Call to Action Section - Can reuse the CTA section from homepage -->
+          <section class="section cta-section" style="text-align: center; background-color: var(--background-light);">
+            <div class="container">
+                <h2>Ready to Start Your Project?</h2>
+                <p>Contact us today to get a personalized quote for the services you need.</p>
+                <a href="contact.html" class="cta-button">Get a Quote</a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Common Footer code goes here -->
+     <footer>
+        <div class="container footer-container">
+            <div class="footer-col">
+                <a href="index.html" class="logo">
+                    <img src="images/logo.png" alt="Eword Publishers Logo" style="height: 60px; filter: invert(1);">
+                </a>
+                <p style="margin-top: 1em;">Democratizing access to top-tier printing and publishing services.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="how-it-works.html">How it Works</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact Info</h4>
+                <p>
+                    <i class="fa fa-phone"></i>
+                    +254 745 420 420<br>
+                    +254 725 006 002
+                </p>
+                <p>
+                    <i class="fa fa-envelope"></i>
+                    ewordpublishers@gmail.com
+                </p>
+                <p>
+                    <i class="fa fa-map-marker"></i>
+                    Pension Towers, Loita Street,<br>10th Floor, Nairobi, Kenya
+                </p>
+            </div>
+            <div class="footer-col social-icons">
+                 <h4>Follow Us</h4>
+                 <a href="https://web.facebook.com/ewordpublishers/" target="_blank"><i class="fa fa-facebook"></i></a>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            © <span id="current-year"></span> Eword Publishers. All Rights Reserved.
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+    <script src="js/script.js"></script>
+</body>
+</html>
